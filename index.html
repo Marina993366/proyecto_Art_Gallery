@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto CSS - Modern Art Galery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700..900&family=Outfit:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <picture class="hero__image">
+          <source srcset="img/hero-image.jpg" media="(min-width: 768px)">
+          <img src="img/hero-mobile-image.jpg" alt="">          
+        </picture> 
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__content-text">
+              <h1 class="hero__content-text-title">MODERN ART GALLERY</h1>
+              <p class="hero__content-text-description">
+                The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.
+              </p>
+            </div>
+            <a href="location.html" class="hero__content-button">
+              <span class="hero__content-button-text">OUR LOCATION</span>
+              <span class="hero__content-button-arrow"><img src="img/arrow.svg" alt=""></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="container-gallery">
+        <section class="gallery">
+          <div class="gallery-image-1">
+            <img src="img/galery-image-1.jpg" alt="">
+          </div>
+          <div class="gallery-content">
+            <h2 class="gallery-content-title">Your Day at the Gallery</h2>
+            <p class="gallery-content-text">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
+          </div>
+          <div class="gallery-image-2">
+            <img src="img/galery-image-2.jpg" alt="">
+          </div>
+          <picture class="gallery-image-3">
+            <img src="img/galery-image-3.jpg" alt="">
+          </picture>
+          <div class="gallery-invitation">
+            <h2 class="gallery-invitation-title">
+              COME & BE INSPIRED
+            </h2>
+            <p class="gallery-invitation-text">
+              We’re excited to welcome you to our gallery and see how our collections influence you.
+            </p>
+          </div>
+        </section>
+      </div>  
+    </main>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="img/logo-gallery.svg" alt="">
+      </div>
+      <div class="footer-text">
+        <p>
+          The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="img/facebook-icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="img/instagram-icon.svg" alt="Instagram"></a>
+        <a href="#"><img src="img/twiter-icon.svg" alt="Twitter"></a>        
+      </div>
+    </footer>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

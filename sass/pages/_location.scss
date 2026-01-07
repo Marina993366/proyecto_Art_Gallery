@@ -1,0 +1,171 @@
+.location {
+    &__hero {
+        position: relative;
+
+        &__button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            z-index: 2;
+
+            @include breakpoint(tablet) {
+                left: 5%;
+            }
+
+            @include breakpoint(desktop) {
+                left: 11%;
+            }
+
+            &-text {
+                @include font-title;
+                font-size: 20px;
+                font-weight: 800;
+                padding: 24px 32px;
+                background-color: $black;
+                color: $white;
+                letter-spacing: 3.64px;
+            }
+
+            &-arrow {
+                background-color: $brown;
+                padding: 24px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__content{
+        background-color: $black;
+        padding: 48px 16px;
+
+        @include breakpoint(tablet) {
+            display: flex;
+            padding: 88px 40px 80px;
+        }
+
+
+        @include breakpoint(desktop) {
+            padding: 104px 165px 128px;
+        }
+
+        &-title{
+            @include font-title;
+            font-size: 50px;
+            color: $white;
+
+            @include breakpoint(tablet) {
+                padding-right: 82px;
+                font-size: 55px;
+            }
+
+            @include breakpoint(desktop) {
+                padding-right: 320px;
+                font-size: 70px;
+            }
+        }
+
+        &-details{
+
+            &-title{
+                @include font-title;
+                font-size: 32px;
+                color: $brown;
+                padding-top: 48px;
+
+                @include breakpoint(tablet) {
+                    padding: 0;
+                }
+
+                @include breakpoint(tablet) {
+                    font-size: 36px;
+                }
+            }
+
+            & p {
+                @include font-body;
+                font-size: 18px;
+                color: $white;
+                line-height: 28px;
+
+                @include breakpoint(tablet) {
+                    font-size: 22px;
+                    line-height: 32px;
+                    padding: 22px 0 32px;
+                }
+            }
+                
+            &-header{
+                padding: 20px 0;
+
+                @include breakpoint(tablet) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    &__footer{
+        background-color: $brown;
+        padding: 48px 32px;
+
+        @include breakpoint(tablet) {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+        }
+
+        @include breakpoint(desktop) {
+            padding: 80px 165px;
+        }
+
+        &-logo {
+            @include breakpoint(tablet) {
+                padding-right: 65px;
+            }
+
+            & img {
+                @include breakpoint(desktop) {
+                    width: 160px;
+                }
+            }
+        }
+
+        &-text{
+            @include font-body;
+                font-size: 16px;
+                color: $black;
+                padding: 38px 0;
+
+            @include breakpoint(tablet) {
+                width: 280px;
+                padding: 0;
+            }
+
+            @include breakpoint(desktop) {
+                font-size: 18px;
+                width: 570px;
+                padding-left: 80px;
+            }
+        }
+
+        &-social{
+            display: flex;
+            gap: 20px;
+
+            @include breakpoint(tablet) {
+                padding-left: 140px;
+            }
+
+            @include breakpoint(desktop) {
+                padding-left: 280px;
+
+                & img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+

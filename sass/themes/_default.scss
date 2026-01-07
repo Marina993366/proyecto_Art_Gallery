@@ -1,0 +1,7 @@
+html * {
+    @include font-title();
+}
+
+body {
+    overflow-x: hidden;
+} 

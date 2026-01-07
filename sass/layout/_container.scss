@@ -1,0 +1,13 @@
+.container, .container-gallery{
+    padding: 0 16px;
+
+    @include breakpoint(tablet) {
+        padding: 120px 40px;
+    }
+}
+
+.container-gallery{
+    @include breakpoint(desktop) {
+        padding: 180px 165px;
+    }
+}

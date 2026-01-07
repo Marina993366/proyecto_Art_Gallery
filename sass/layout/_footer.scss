@@ -1,0 +1,49 @@
+.footer {
+    background-color: $black;
+    padding: 48px 32px;
+
+    @include breakpoint(tablet) {
+        display: flex;
+        justify-content: space-between;
+        padding: 56px 40px;        
+    }
+
+    @include breakpoint(desktop) {
+        padding: 80px 165px;
+    }
+
+    &-logo{
+        @include breakpoint(tablet) {
+            max-width: 110px;
+        }
+    }
+
+    &-text p{
+        @include font-body;
+        font-size: 16px;
+        color: $white;
+        padding: 38px 0;
+        padding-right: 5px;
+
+        @include breakpoint(tablet) {
+            max-width: 310px;
+            padding: 0;
+            padding-right: 60px;
+        }
+
+        @include breakpoint(desktop) {
+            max-width: 430px;
+        }
+    }
+
+    &-social{
+        display: flex;
+        gap: 20px;
+    }   
+
+    &-social img{
+        @include breakpoint(tablet) {
+            max-width: 50px;
+        }
+    }
+}

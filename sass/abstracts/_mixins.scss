@@ -1,0 +1,26 @@
+$breakpoints: (
+  tablet: 768px,
+  tablet-horizontal: 1024px,
+  desktop: 1200px,
+  desktop-xl: 1440px
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin font-title($weight: 900) {
+  font-family: $font-heading;
+  font-weight: $weight;
+  color: $black;
+  text-transform: uppercase;
+}
+
+@mixin font-body($weight: 300) {
+  font-family: $font-body;
+  font-weight: $weight;
+  line-height: 1.6;
+  text-transform: none;
+}

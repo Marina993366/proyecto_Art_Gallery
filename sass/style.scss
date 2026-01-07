@@ -1,12 +1,7 @@
 @import "./abstracts/abstracts";
 @import "./base/base";
-@import "./components/components";
 @import "./layout/layout";
 @import "./pages/pages";
 @import "./themes/themes";
 @import "settings";
 
-
-html{
-    overflow-x: hidden;
-}

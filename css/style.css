@@ -1,0 +1,573 @@
+/* =====================
+    Breakpoints
+===================== */
+/* =====================
+    Fonts
+===================== */
+/* =====================
+    Colors
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: #444444;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.footer {
+  background-color: #151515;
+  padding: 48px 32px;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding: 80px 165px;
+  }
+}
+@media (min-width: 768px) {
+  .footer-logo {
+    max-width: 110px;
+  }
+}
+.footer-text p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 38px 0;
+  padding-right: 5px;
+}
+@media (min-width: 768px) {
+  .footer-text p {
+    max-width: 310px;
+    padding: 0;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-text p {
+    max-width: 430px;
+  }
+}
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .footer-social img {
+    max-width: 50px;
+  }
+}
+
+.hero {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 60% 1fr;
+    min-height: 700px;
+    position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    min-height: 800px;
+    position: relative;
+    background: linear-gradient(to right, #151515 50%, #FFFFFF 50%);
+  }
+}
+@media (min-width: 768px) {
+  .hero__content {
+    position: absolute;
+    top: 145px;
+    right: 40px;
+    width: 340px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0 16vw;
+    padding-left: 165px;
+    position: relative;
+    z-index: 20;
+  }
+}
+.hero__content-text {
+  display: contents;
+}
+.hero__content-text-title {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+  font-size: 60px;
+  padding-top: 32px;
+}
+@media (min-width: 768px) {
+  .hero__content-text-title {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__content-text-title {
+    width: 514px;
+    font-size: 96px;
+    color: #FFFFFF;
+    line-height: 0.9;
+    grid-column: 1;
+    grid-row: 1/span 2;
+    align-self: start;
+    padding-right: 60px;
+  }
+}
+.hero__content-text-description {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: none;
+  color: #444444;
+  font-size: 18px;
+  padding: 32px 5px;
+}
+@media (min-width: 1200px) {
+  .hero__content-text-description {
+    font-size: 22px;
+    width: 350px;
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 64px;
+  }
+}
+.hero__content-button {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 120px;
+}
+@media (min-width: 1200px) {
+  .hero__content-button {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+  }
+}
+.hero__content-button-text {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 24px 32px;
+  background-color: #151515;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3.64px;
+}
+.hero__content-button-arrow {
+  background-color: #D5966C;
+  color: #FFFFFF;
+  padding: 24px;
+}
+
+@media (min-width: 768px) {
+  .hero__image {
+    flex: 1;
+    max-height: 700px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__image {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 540px;
+    min-height: 800px;
+    z-index: 1;
+  }
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.container, .container-gallery {
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .container, .container-gallery {
+    padding: 120px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-gallery {
+    padding: 180px 165px;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .gallery {
+    display: grid;
+    gap: 11px;
+    grid-template-columns: 1.2fr 0.6fr 1.2fr;
+    grid-template-rows: 1.2fr 0.6fr 1.2fr;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: 445px 1fr 445px;
+    grid-template-rows: 400px 313px 377px;
+    gap: 30px;
+    max-height: none;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-image-1 {
+    grid-column: 2/span 2;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-image-2 {
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-image-3 {
+    grid-column: 3/span 1;
+    grid-row: 2/span 1;
+  }
+}
+.gallery-content {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .gallery-content {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-content {
+    padding: 30px 90px 30px 0;
+  }
+}
+.gallery-content-title {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-top: 25px;
+}
+@media (min-width: 768px) {
+  .gallery-content-title {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-content-title {
+    font-size: 60px;
+    padding: 0;
+    padding-bottom: 32px;
+  }
+}
+.gallery-content-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: none;
+  color: #444444;
+  padding-top: 21px;
+  padding-bottom: 32px;
+}
+@media (min-width: 1200px) {
+  .gallery-content-text {
+    padding: 0;
+    font-size: 22px;
+  }
+}
+.gallery-invitation {
+  background-color: #151515;
+  margin-bottom: 120px;
+  padding: 48px 24px;
+}
+@media (min-width: 768px) {
+  .gallery-invitation {
+    grid-column: 3/span 1;
+    grid-row: 3/span 2;
+    padding: 85px 28px;
+    margin-bottom: 11px;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-invitation {
+    padding: 65px 48px;
+    max-height: 377px;
+  }
+}
+.gallery-invitation-title {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 50px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.gallery-invitation-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: none;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+@media (min-width: 1200px) {
+  .gallery-invitation-text {
+    font-size: 22px;
+  }
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.location__hero {
+  position: relative;
+}
+.location__hero__button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .location__hero__button {
+    left: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  .location__hero__button {
+    left: 11%;
+  }
+}
+.location__hero__button-text {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 24px 32px;
+  background-color: #151515;
+  color: #FFFFFF;
+  letter-spacing: 3.64px;
+}
+.location__hero__button-arrow {
+  background-color: #D5966C;
+  padding: 24px;
+  transform: rotate(180deg);
+}
+.location__content {
+  background-color: #151515;
+  padding: 48px 16px;
+}
+@media (min-width: 768px) {
+  .location__content {
+    display: flex;
+    padding: 88px 40px 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .location__content {
+    padding: 104px 165px 128px;
+  }
+}
+.location__content-title {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .location__content-title {
+    padding-right: 82px;
+    font-size: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .location__content-title {
+    padding-right: 320px;
+    font-size: 70px;
+  }
+}
+.location__content-details-title {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: #D5966C;
+  padding-top: 48px;
+}
+@media (min-width: 768px) {
+  .location__content-details-title {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .location__content-details-title {
+    font-size: 36px;
+  }
+}
+.location__content-details p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 28px;
+}
+@media (min-width: 768px) {
+  .location__content-details p {
+    font-size: 22px;
+    line-height: 32px;
+    padding: 22px 0 32px;
+  }
+}
+.location__content-details-header {
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .location__content-details-header {
+    font-size: 22px;
+  }
+}
+.location__footer {
+  background-color: #D5966C;
+  padding: 48px 32px;
+}
+@media (min-width: 768px) {
+  .location__footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .location__footer {
+    padding: 80px 165px;
+  }
+}
+@media (min-width: 768px) {
+  .location__footer-logo {
+    padding-right: 65px;
+  }
+}
+@media (min-width: 1200px) {
+  .location__footer-logo img {
+    width: 160px;
+  }
+}
+.location__footer-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  text-transform: none;
+  font-size: 16px;
+  color: #151515;
+  padding: 38px 0;
+}
+@media (min-width: 768px) {
+  .location__footer-text {
+    width: 280px;
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .location__footer-text {
+    font-size: 18px;
+    width: 570px;
+    padding-left: 80px;
+  }
+}
+.location__footer-social {
+  display: flex;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .location__footer-social {
+    padding-left: 140px;
+  }
+}
+@media (min-width: 1200px) {
+  .location__footer-social {
+    padding-left: 280px;
+  }
+  .location__footer-social img {
+    width: 30px;
+  }
+}
+
+html * {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
+  color: #151515;
+  text-transform: uppercase;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

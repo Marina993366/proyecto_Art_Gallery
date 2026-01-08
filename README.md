@@ -6,6 +6,10 @@ El objetivo principal fue reproducir fielmente el diseño en sus tres versiones 
 
 ---
 
+## 🎨 Diseño Figma
+
+👉 https://www.figma.com/design/En1HvZSnMQyAC4LquKUV2k/CSS---Proyectos?node-id=3235-683
+
 ## 🚀 Demo
 
 👉 *https://marina993366.github.io/proyecto_Art_Gallery/*
